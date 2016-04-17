@@ -2,11 +2,87 @@
 <html lang="ru">
   <head>
     <meta charset="utf-8">
-    <title>HTML Academy: Барбершоп</title>
+    <title>Barbershop:catalog</title>
   </head>
   <body>
-
-    <p>Репозиторий создан для обучения на интенсивном онлайн‑курсе «<a href="https://htmlacademy.ru/intensive/htmlcss">Базовый HTML и CSS</a>».</p>
-
+    <header class=main-header>
+         <div class="container">
+         <nav class="main-navigation">
+          <ul>
+		  <li>
+               <div class="index-logo">
+			   <img src="img/index-logo.png" width="50" height="20" alt="Барбершоп «Бородинский»">
+               </div>
+            </li>
+            <li>
+              <a href="#">Информация</a>
+            </li>
+            <li>
+              <a href="#">Новости</a>
+            </li>
+            <li>
+              <a href="#">Прайс-лист</a>
+            </li>
+            <li>
+              <a href="#">Магазин</a>
+            </li>
+            <li>
+              <a href="#">Контакты</a>
+            </li>
+          </ul>
+        </nav>
+        <div class="user-block">
+          <a class="login" href="#">Вход</a>
+        </div>
+       </header>	   
+	   <main class="container">
+	   <h1>СРЕДСТВА ДЛЯ УХОДА</h1>
+	   <nav class="breadcrumbs">
+          <ul>
+		    <li>
+              <a href="#">ГЛАВНАЯ</a>
+            </li>
+            <li>
+              <a href="#">МАГАЗИН</a>
+            </li>
+            <li>
+              <a href="#">СРЕДСТВА ДЛЯ УХОДА</a>
+            </li>
+            </ul>
+        </nav>
+		<h2>ПРОИЗВОДИТЕЛИ:</h2>
+		 <form class="appointment-form" action="https://echo.htmlacademy.ru" method="post">
+		 <input type="checkbox" checked name=brand id=brand-field>
+		  <label for="brand-field">Baxter of California</label>
+		  <input type="text" name=brand id=brand-field>	
+		  <label for="brand-field">Mr Natty</label>
+		 <input type="checkbox" checked name=brand id=brand-field>
+		  <label for="brand-field">Suavecito</label>
+		  <input type="text" name=brand id=brand-field>
+		   <label for="brand-field">Malin+Goetz</label>
+		 <input type="text" name=brand id=brand-field>
+		  <label for="brand-field">Murray’s</label>
+		 <input type="checkbox" checked name=brand id=brand-field>
+		  <label for="brand-field">American Crew</label>
+		 </form>
+		<h2>ГРУППЫ ТОВАРОВ:</h2>
+		 <form action="https://echo.htmlacademy.ru" method="post">
+		 <label>
+            <input type=radio name=item-grups value="">
+                Бритвенные принадлежности
+         </label>
+		 <label>
+            <input type=checked name=item-grups value="">
+                Средства для ухода
+         </label>
+         <label>
+            <input type=radio name=item-grups value="">
+                Аксессуары
+         </label>
+		    <a class="btn" href="#">Показать</a>
+         </form>
+		 <article>
+		 </article>
+    </main>
   </body>
 </html>
